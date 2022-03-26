@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 112</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h1>
+                    Gesture Recognition
+                    &#128077;&#127995;
+                    &#128075;&#127995;
+                    &#9996;&#127995;
+                    &#128078;&#127995;
+                </h1>
+                <br><br>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <h1>Camera</h1>
+                    <div class="divsImg" id="camera"></div>
+                    <br>
+                    <button onclick="takeSnapshot()">Snapshot</button>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <h1>Preview</h1>
+                    <div class="divsImg" id="preview"></div>
+                    <br>
+                    <button onclick="checkImage()">Predict</button>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+                <div class="divs col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                        <h3><b><i>Prediction 1</i></b></h3>
+                        <br><br>
+                        <h1 id="gesture_emoji1" class="emojis"></h1>
+                        <h3 id="gesture_name1"></h3>
+                </div>
+                <div class="divs col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                        <h3><b><i>Prediction 2</i></b></h3>
+                        <br><br>
+                        <h1 id="gesture_emoji2" class="emojis"></h1>
+                        <h3 id="gesture_name2"></h3>
+                </div>
+            </center>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
